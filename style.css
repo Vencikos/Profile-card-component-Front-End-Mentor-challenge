@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  font-family: "Kumbh Sans";
+  font-size: 18px;
+}
+
+body {
+  overflow: hidden;
+  position: relative;
+  max-width: 375px;
+  max-height: 667px;
+  background-color: hsl(185, 75%, 39%);
+  z-index: -2;
+  margin: 8rem auto;
+}
+
+@media (min-width: 1440px) {
+  body {
+    max-width: 1440px;
+    max-height: 1200px;
+    background-color: hsl(185, 75%, 39%);
+  }
+}
+
+p {
+  color: hsl(0, 0%, 59%);
+  font-size: 0.6rem;
+  font-weight: 400;
+  margin-top: 0.3rem;
+  letter-spacing: 0.1rem;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.hr {
+  border-top: 1px solid hsl(0, 0%, 59%);
+  width: 100%;
+  margin: 1.5rem 0 auto;
+}
+.top-circle {
+  position: absolute;
+  width: 180%;
+  left: -25rem;
+  top: -20rem;
+  z-index: -1;
+}
+
+.bottom-circle {
+  position: absolute;
+  width: 150%;
+  height: auto;
+  right: -20rem;
+  top: 17rem;
+  z-index: -1;
+}
+
+@media (min-width: 1440px) {
+  .top-circle {
+    width: 67%;
+    left: -16rem;
+    top: -31rem;
+  }
+
+  .bottom-circle {
+    width: 70%;
+    right: -15rem;
+    top: 16rem;
+  }
+}
+.card {
+  position: relative;
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  width: 325px;
+  border-radius: 15px;
+  margin: 6rem auto;
+  z-index: 1;
+}
+
+@media (min-width: 1440px) {
+  .card {
+    width: 350px;
+  }
+}
+
+.profile-pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.profile-pic img {
+  position: relative;
+  width: 80%;
+  height: auto;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  margin: 2rem auto 1rem;
+}
+
+.img-card {
+  position: absolute;
+}
+
+.text {
+  margin: 1.5rem 1rem;
+}
+
+.text-div {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 0 3rem;
+}
+
+@media (min-width: 1440px) {
+  .text {
+    margin: 1.5rem 1.5rem;
+  }
+}
+
+.text-div h2 {
+  font-size: 1rem;
+}
+
+.text-name {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.2rem;
+}
+
+.text-age {
+  margin-left: 0.5rem;
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+}
